@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/PretendardVariable.woff2) format("woff2-variations");
+}
+
+@font-face {
+  font-family: "Prociono";
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/Prociono-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Codystar";
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/Codystar-Regular.woff2) format("woff2");
+}
+

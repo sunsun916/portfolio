@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>지선 포트폴리오</title>
+    <!-- reset -->
+    <link rel="stylesheet" href="./common/styles/minireset.min.css" />
+    <!-- fonts -->
+    <link rel="stylesheet" href="./common/styles/fonts.css" />
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- style css -->
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Codystar&display=swap" rel="stylesheet">
+
+    <!-- script -->
+    <script defer src="./index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- open graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="이지선 포트폴리오" />
+    <meta property="og:url" content="https://sunsun916.github.io/portfolio/" />
+    <meta property="og:image" content="https://sunsun916.github.io/portfolio/common/images/openGraph.png"/>
+    <meta property="og:description" content="기획+디자인이 가능한 신입 프론트앤드 개발자 포트폴리오"/>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./common/images/favicon.ico" type="image/x-icon" />
+
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div class="wrp">
+          <!-- 별동별 -->
+          <div class="top">
+            <div class="shooting-stars">
+              <div class="shooting-star"></div>
+              <div class="shooting-star shooting-star--mid"></div>
+              <div class="shooting-star shooting-star--fast"></div>
+              <div class="shooting-star shooting-star--meh"></div>
+            </div>
+            <!-- 별 반짝이는 배경 -->
+            <canvas id="nightsky"> </canvas>
+          </div>
+          <div class="top-bg">
+            <img src="./common/images/mountainbg.png" alt="mountain" />
+          </div>
+        </div>
+
+        <h2><span>import</span> { JISUN } <span>from</span> “History” ;</h2>
+        <p class="brace">
+          <img src="./common/images/brace.png" alt="brace" />
+        </p>
+        <p>
+          밤하늘, 반짝이며 길을 안내하는 "별"처럼<br />코드로 웹을 안내하는 저는
+          "이지선" 입니다.
+        </p>
+
+        <!-- 메뉴 nav bar -->
+        <div class="topMenu">
+          <!-- logo  css background -->
+          <h1><a href="#">PORTFOLIO</a></h1>
+          <nav class="gnb">
+            <ul>
+              <li><a href="#Works">Works</a></li>
+              <li><a href="#Skills">Skills</a></li>
+              <li><a href="#About">About</a></li>
+              <li><a href="#Contact">Contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- 햄버거 메뉴 -->
+          <div class="fullscreen" id="fullscreen"> 
+            <div class="sideMenu"> 
+              <ul>
+                <li><a href="#">Works</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="hamBtn">
+            <!-- <a class="menuTrigger" href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a> -->
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          
+        </div>
+
+        <!-- 돌아가는 text 행성 -->
+        <img
+          src="./common/images/movetext_s.png"
+          alt="movetext"
+          class="movetext"
+        />
+        <img
+          src="./common/images/ellipse_s.png"
+          alt="ellipse"
+          class="ellipse"
+        />
+      </header>
+
+      <main>
+        <section id="works">
+          <!-- 첫번째 프로젝트  -->
+          <!-- <div data-aos="zoom-in-up"> -->
+          <!-- works 타이틀  -->
+          <div class="article1-title">
+            <div class="circle-small"></div>
+            <h2>WORKS</h2>
+          </div>
+          <!-- works 서브타이틀  -->
+          <div class="article1-subTitle">
+            <h3>FRONT-END WEB PROJECT</h3>
+          </div>
+          <!-- 프로젝트 1 이미지 & 도형 -->
+
+          <div class="flexBox1">
+            <div class="article1-img">
+              <p>
+                <a href="#"
+                  ><img
+                    src="./common/images/projImg1.png"
+                    alt="projectimg"
+                    class="filter"
+                /></a>
+              </p>
+            </div>
+
+            <!-- 프로젝트 설명 aos-->
+            <div
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="2000"
+            >
+              <!-- 프로젝트 전체 div박스 및 본문내용 -->
+              <div class="article1-project">
+                <div class="article1-titleBox">
+                  <h4>HTML5 / CSS 3 / JS</h4>
+                  <h2>react web</h2>
+                </div>
+                <div class="article1-titleTxt">
+                  <p>
+                    기업에 가장 많이 선호하는 레이아웃으로<br />리액트를
+                    활용하여 유지보수의 편리함을 더하다.
+                  </p>
+                  <p>2022 / 개인프로젝트</p>
+                  <p>
+                    <button><a href="">OnClick = “More"</a></button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 두번째 프로젝트 -->
+          <!-- works 타이틀  -->
+          <div class="article2-title">
+            <h2>WORKS</h2>
+            <div class="circle-small"></div>
+            <div class="circle-small"></div>
+          </div>
+          <!-- works 서브타이틀  -->
+          <div class="article2-subTitle">
+            <h3>FRONT-END WEB PROJECT</h3>
+          </div>
+
+          <!-- 프로젝트 2 이미지 & 도형 -->
+
+          <div class="flexBox2">
+            <div class="article2-img">
+              <p>
+                <a href="#"
+                  ><img src="./common/images/proj2Img2.png" alt="projectimg"
+                /></a>
+              </p>
+            </div>
+
+            <!-- 프로젝트 설명 -->
+            <div
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="2000"
+            >
+              <div class="article2-project">
+                <div class="article2-titleBox">
+                  <h4>HTML5 / CSS 3 / JS</h4>
+                  <h2>법무법인 화우</h2>
+                </div>
+                <div class="article2-titleTxt">
+                  <p>Web Publishing + UX 개선을 더하다.</p>
+                  <p>2022 / 팀프로젝트 4명 / Sub page 구현</p>
+                  <p>
+                    <button><a href="">OnClick = “More"</a></button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 세번째 프로젝트 -->
+
+          <!-- works 타이틀  -->
+          <div class="article3-title">
+            <div class="circle-small"></div>
+            <div class="circle-small"></div>
+            <div class="circle-small"></div>
+            <h2>WORKS</h2>
+          </div>
+          <!-- works 서브타이틀  -->
+          <div class="article3-subTitle">
+            <h3>FRONT-END WEB PROJECT</h3>
+          </div>
+
+          <!-- 프로젝트 3 이미지 & 도형 -->
+
+          <div class="flexBox3">
+            <div class="article3-img">
+              <p>
+                <a href="#"
+                  ><img src="./common/images/projImg3.png" alt="projectimg"
+                /></a>
+              </p>
+
+              <!-- <div class ="squate"></div> -->
+            </div>
+
+            <!-- 프로젝트 설명 -->
+            <div
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="2000"
+            >
+              <div class="article3-project">
+                <div class="article3-titleBox">
+                  <h4>HTML5 / CSS3 / JS</h4>
+                  <h2>PROJECT 3</h2>
+                </div>
+                <div class="article3-titleTxt">
+                  <p>HTML에 CSS를 더하다.</p>
+                  <p>2023 / 팀프로젝트 4명 / Main page 구현</p>
+                  <p>
+                    <button><a href="">OnClick = “More"</a></button>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 네번째 프로젝트 -->
+
+            <!-- works 타이틀  -->
+            <div class="article4-title">
+              <h2>WORKS</h2>
+              <div class="circle-small"></div>
+              <div class="circle-small"></div>
+              <div class="circle-small"></div>
+              <div class="circle-small"></div>
+            </div>
+
+            <!-- works 서브타이틀  -->
+            <div class="article4-subTitle">
+              <h3>FRONT-END WEB PROJECT</h3>
+            </div>
+          </div>
+          <!-- 프로젝트 4 이미지 & 도형 -->
+
+          <div class="flexBox4">
+            <div class="article4-img">
+              <p>
+                <a href="#"
+                  ><img src="./common/images/projImg4.png" alt="projectimg"
+                /></a>
+              </p>
+
+              <!-- <div class ="squate"></div> -->
+            </div>
+
+            <!-- 프로젝트 설명 -->
+            <div
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="2000"
+            >
+              <div class="article4-project">
+                <div class="article4-titleBox">
+                  <h4>HTML5 / CSS 3 / JS</h4>
+                  <h2>PROJECT 4</h2>
+                </div>
+                <div class="article4-titleTxt">
+                  <p>Web Publishing +</p>
+                  <p>2023 / 개인프로젝트 / Web 구현</p>
+                  <p>
+                    <button><a href="">OnClick = “More"</a></button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <div id="wrapper">
+          <section id="design">
+            <div class="designBox">
+              <ul>
+                <li class="title">DESIGN</li>
+                <li>편집 / 패키지 / 영상</li>
+                <li><a href="#" class="Button">_blank</a></li>
+              </ul>
+            </div>
+          </section>
+
+          <section id="skills">
+            <!-- 첫번째 페이지 -->
+            <!-- <div class="skillsitem1"> -->
+
+            <div class="bg sticky sticky1">
+              <h2>SKILLS</h2>
+
+              <div class="skillstextBox">
+                <!-- SKILLS 첫번째 페이지 왼쪽 컨텐츠-->
+                <div class="txtBox-left">
+                  <div class="leftTltle">
+                    <h4>HTML & CSS3</h4>
+                    <img
+                      src="./common/images/skills01.png"
+                      alt="htmlcssicon"
+                    />
+                  </div>
+
+                  <div class="htmlcssTxt">
+                    <p>웹 사이트 구축 및 디자인</p>
+                    <p>웹표준 & 접근성 마크업</p>
+                    <p>flex, grid, position 레리아웃 구현</p>
+                    <p>style 적용, scss사용 애니메이션 구현</p>
+                    <p>미디어쿼리 이용 반응형 웹 제작</p>
+                  </div>
+                </div>
+
+                <!-- SKILLS 첫번째 페이지 오른쪽 컨텐츠-->
+                <div class="txtBox-right">
+                  <div class="rightTltle">
+                    <h4>JAVASCRIPT(ES6)</h4>
+                    <img src="./common/images/skills02.png" alt="jsicon" />
+                  </div>
+
+                  <div class="htmlcssTxt">
+                    <p>자바스크립트 기본 문법 이해</p>
+                    <p>Map, Reduce, 콜백함수 등</p>
+                    <p>Axios 및 다양한 라이브러리 적용</p>
+                    <p>이벤트 메소드 구현</p>
+                    <p>JSON, OpenAPI 활용</p>
+                    <p>런타임 node js</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- </div>     -->
+
+            <!-- <div class="skillsitem2"> -->
+
+            <!-- 두번째 페이지 -->
+            <div class="bg sticky sticky2">
+              <h2>SKILLS</h2>
+              <div class="skillstextBox">
+                <!-- SKILLS 두번째 페이지 왼쪽 컨텐츠-->
+                <div class="txtBox-left">
+                  <div class="leftTltle">
+                    <h4>REACT</h4>
+                    <img src="./common/images/skills03.png" alt="htmlcssicon" />
+                  </div>
+
+                  <div class="htmlcssTxt">
+                    <p>함수 컴포넌트 사용</p>
+                    <p>Style Components 스타일 구성</p>
+                    <p>Router, useState 등 사용</p>
+                    <p>Context API, Redux Toolkit 상태관리</p>
+                    <p>React-router-dom, Hook 로직 작성</p>
+                  </div>
+                </div>
+                <!-- SKILLS 두번째 페이지 오른쪽 컨텐츠-->
+                <div class="txtBox-right">
+                  <div class="rightTltle">
+                    <h4>Git & Github</h4>
+                    <img src="./common/images/skills04.png" alt="jsicon" />
+                  </div>
+
+                  <div class="htmlcssTxt">
+                    <p>github 배포</p>
+                    <p>버전 관리 & 팀프로젝트 공유</p>
+                    <p>Git Bash, VScode 사용</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+
+            <!-- <div class="skillsitem3"> -->
+            <!-- 세번째 페이지 -->
+            <div class="bg sticky sticky3">
+              <h2>SKILLS</h2>
+
+              <div class="skillstextBox">
+                <!-- SKILLS 세번째 페이지 왼쪽 컨텐츠-->
+                <div class="txtBox-left">
+                  <div class="leftTltle">
+                    <h4>Photoshop &<br>Illustrator &<br>Figma</h4>
+                    <img src="./common/images/skills05.png" alt="htmlcssicon" />
+                  </div>
+
+                  <div class="htmlcssTxt">
+                    <p>상품 컨셉 사진 촬영 가능</p>
+                    <p>이미지 편집 & 디자인</p>
+                    <p>UX/UI를 고려한 디자인</p>
+                    <p>편집 디자인</p>
+                    <p>(잡지,브로슈어,상세페이지 등)</p>
+                    <p>Trototype 제작</p>
+                  </div>
+                </div>
+                <!-- SKILLS 세번째 페이지 오른쪽 컨텐츠-->
+                <div class="txtBox-right">
+                  <div class="rightTltle">
+                    <h4>Premeire Pro & <br />After Effects</h4>
+                    <img src="./common/images/skills06.png" alt="jsicon" />
+                  </div>
+
+                  <div class="htmlcssTxt">
+                    <p>영상 연출/기획/편집</p>
+                    <p>상황별 효과 구현</p>
+                    <p>다양한 트랜지션 효과</p>
+                    <p>타이포그래피 활용</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- </div>   -->
+            
+          </section>
+
+          <div data-aos="fade-right">
+          <section id="about">
+            <div class="aboutBox">
+              <h2>ABOUT ME</h2>
+              <div class="about-box">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td>Name</td>
+                      <td>LEE JI SUN</td>
+                    </tr>
+
+                    <tr>
+                      <td>Educational<br />Backgrounds</td>
+                      <td>
+                        연세대학교 원주캠퍼스<br />디자인예술학부 시각디자인
+                        전공
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>Work Experience</td>
+                      <td>
+                        그린나래에이전시 / 디자인팀 인턴 / 경력 3개월
+                        <p>
+                          디자이너그룹(소명엔코) / 디자인팀 주임 / 경력 4년2개월
+                        </p>
+                        (주)한국미스미 / 상품팀 대리 / 경력 5년 / 비즈니스 일본어사용<br />프론트엔드 개발&실무 구현과정 수료
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="buttonBox">
+                  <button>OnClick = “More”</button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+       
+        <!-- <div data-aos="fade-left"> -->
+          <section id="contact">
+            <div class="contact">
+              <h2>CONTACT</h2>
+              <p>
+                import{
+                <img src="./common/images/contactQR.png" alt="contactQRcode" />
+                }"contact"
+              </p>
+              <div class="buttonBox">
+                <button>EMAIL</button>
+                <button>BLOG</button>
+                <a href="https://github.com/sunsun916">
+                  <button>GITHUB</button></a
+                >
+              </div>
+            </div>
+          </section>
+        <!-- </div>  -->
+
+          <!-- 하단 bg -->
+          <!-- <canvas id="canv"> </canvas> -->
+        </div>
+        <!-- id wrapper 닫힘 div-->
+      <!-- <canvas id="canv"></canvas> -->
+        <button onclick="topFunction()" id="uptoBtn" title="Go to top">Top</button>
+     
+      </main>
+      
+      <footer>
+        <section id="footer">
+          <h3>© 2023 Design & Published By JISUN LEE. All Rights Reserved.</h3>
+
+          <!-- <div class="gradient-bg">
+            <div class="aurora-base aurora-one anim1"></div>
+            <div class="aurora-base aurora-two"></div>
+            <div class="aurora-base aurora-three anim2"></div>
+          </div> -->
+    
+        </section>
+    
+      </footer>
+    </div>
+  </body>
+</html>
