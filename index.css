@@ -3,12 +3,14 @@ body {
   background-color: #000;
   color: #fff;
   font-family: "Pretendard", sans-serif;
+  overflow-x: hidden;
 }
 
 header {
   position: relative;
 }
 header .wrp {
+  margin: 0 auto;
   /* video {
      width: 100%;
      height: 100vh;
@@ -250,7 +252,8 @@ header .wrp .shooting-star--fast {
 }
 header .wrp .top-bg {
   position: relative;
-  margin: -190px auto 0;
+  margin: -209px -22px;
+  /*margin: -190px auto 0; */
   /* background:url(./common/images/mountainbg.png) no-repeat 50% / cover; */
 }
 header h2 {
@@ -266,7 +269,7 @@ header span {
 }
 header p {
   position: absolute;
-  top: 48%;
+  top: 49%;
   left: 50%;
   transform: translate(-50%);
   line-height: 1.5em;
@@ -275,9 +278,9 @@ header .movetext {
   -webkit-animation: rotate_image 6s linear infinite;
           animation: rotate_image 6s linear infinite;
   transform-origin: 50% 50%;
-  position: absolute;
+  /*position: absolute;
   top: 141px;
-  left: 81%;
+  left: 81%;*/
 }
 @-webkit-keyframes rotate_image {
   100% {
@@ -289,11 +292,18 @@ header .movetext {
     transform: rotate(360deg);
   }
 }
-header .ellipse {
+header .moovingtxt {
+  width: 213px;
+  height: 300px;
   position: absolute;
   top: 170px;
-  right: 10%;
-  /*right: 116px;*/
+  right: 184px;
+}
+header .moovingtxt .ellipse {
+  /* transform: translateY(-45%); */
+  transform: translate(-38px, -107px);
+  /* right: 128px;*/
+  /*right: 10%; */
 }
 header .topMenu {
   padding: 0 160px 0;
@@ -408,9 +418,10 @@ header .topMenu .hamBtn div {
   margin: 0 auto;
   display: inline-block;
   position: relative;
+  left: 0%;
   font-size: 4em;
   height: 100%;
-  margin: 12% 45%;
+  margin: 12% 40%;
   padding: 0 10px;
 }
 .fullscreen div ul li {
@@ -466,6 +477,7 @@ header .topMenu .hamBtn div {
   }
 }
 #works {
+  margin: 379px 0;
   /* 네번째 프로젝트 */
 }
 #works .article1-title {
@@ -911,7 +923,7 @@ header .topMenu .hamBtn div {
   /* 스킬 왼쪽 텍스트*/
   line-height: 2em;
   display: flex;
-  gap: 50px;
+  gap: 33px;
   /*padding: 20px;*/
   padding: 20px 10px 20px 10px;
 }
@@ -926,7 +938,7 @@ header .topMenu .hamBtn div {
 #wrapper #skills .bg .txtBox-right {
   line-height: 2em;
   display: flex;
-  gap: 35px;
+  gap: 24px;
   padding: 20px;
 }
 #wrapper #skills .bg .rightTltle h4 {
@@ -958,7 +970,8 @@ header .topMenu .hamBtn div {
 }
 #wrapper #about .aboutBox {
   /*margin: 200px 240px 180px 340px;*/
-  margin: 200px 240px 180px 360px;
+  /*margin: 200px 240px 95px 220px;*/
+  margin: 200px 124px 95px 372px;
   width: 1300px;
 }
 #wrapper #about h2 {
@@ -1003,12 +1016,13 @@ header .topMenu .hamBtn div {
   color: #000;
 }
 #wrapper #contact {
-  margin: 180px 370px 500px 1040px;
+  /* margin: 180px 370px 500px 1040px; */
+  /* margin: 96px 128px 297px 776px; */
+  margin: 118px 141px 297px 1070px;
 }
 #wrapper #contact .contact {
   /* margin: 180px 370px 500px 1010px; 
   width: 23%;*/
-  border-bottom: 1px solid #fff;
 }
 #wrapper #contact h2 {
   font-size: 2.6em;
@@ -1016,10 +1030,14 @@ header .topMenu .hamBtn div {
   font-weight: bold;
   border-bottom: 1px solid #fff;
   padding: 10px;
+  /*width: 65%;*/
+  width: 400px;
 }
 #wrapper #contact p {
   font-size: 2em;
-  padding: 28px 18px;
+  /*padding: 28px 18px;*/
+  padding: 28px 0 9px 21px;
+  width: 65%;
 }
 #wrapper #contact p img {
   vertical-align: middle;
@@ -1028,6 +1046,8 @@ header .topMenu .hamBtn div {
 #wrapper #contact .buttonBox {
   /*padding-bottom: 40px;*/
   padding: 5px 10px 40px 10px;
+  border-bottom: 1px solid #fff;
+  width: 400px;
 }
 #wrapper #contact .buttonBox button {
   background-color: transparent;
@@ -1051,7 +1071,7 @@ header .topMenu .hamBtn div {
 #uptoBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
-  bottom: 50px; /* Place the button at the bottom of the page */
+  bottom: 90px; /* Place the button at the bottom of the page */
   right: 60px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
@@ -1074,7 +1094,9 @@ header .topMenu .hamBtn div {
 }
 #footer h3 {
   /* margin: 1055px auto 100px; */
-  margin: 920px auto 100px;
+  /*margin: 920px auto 100px;*/
+  /*margin: 848px auto 100px;*/
+  margin: 100px auto;
   text-align: center;
   font-size: 1.8em;
   font-family: "Codystar", cursive;

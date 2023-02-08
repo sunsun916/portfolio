@@ -4,12 +4,14 @@ body {
   background-color: #000;
   color: #fff;
   font-family: "Pretendard", sans-serif;
+  overflow-x: hidden;
 }
 
 header {
   position: relative;
 
   .wrp {
+    margin: 0 auto;
     .top {
       position: relative;
       width: 100%;
@@ -611,7 +613,8 @@ header {
 
     .top-bg {
       position: relative;
-      margin: -190px auto 0;
+      margin: -209px -22px;
+      /*margin: -190px auto 0; */
       /* background:url(./common/images/mountainbg.png) no-repeat 50% / cover; */
     }
 
@@ -638,7 +641,7 @@ header {
 
   p {
     position: absolute;
-    top: 48%;
+    top: 49%;
     left: 50%;
     transform: translate(-50%);
     line-height: 1.5em;
@@ -647,9 +650,9 @@ header {
   .movetext {
     animation: rotate_image 6s linear infinite;
     transform-origin: 50% 50%;
-    position: absolute;
+    /*position: absolute;
     top: 141px;
-    left: 81%;
+    left: 81%;*/
   }
 
   @keyframes rotate_image {
@@ -657,12 +660,24 @@ header {
       transform: rotate(360deg);
     }
   }
-  .ellipse {
-    position: absolute;
-    top: 170px;
-    right: 10%;
-    /*right: 116px;*/
+
+  .moovingtxt {
+     width: 213px;
+     height: 300px;
+     position: absolute;
+     top: 170px;
+     right: 184px;
+    .ellipse {
+      /* transform: translateY(-45%); */
+      transform: translate(-38px, -107px);
+    
+      /* right: 128px;*/
+      /*right: 10%; */
+   
+    }
+
   }
+
 
   //동영상위 컨텐츠 끝
 
@@ -740,99 +755,98 @@ header .topMenu .hamBtn div {
 
 .fullscreen {
   position: fixed;
-  background:#021425;
+  background: #021425;
   top: 0;
   left: 0;
   width: 100%;
   height: 0%;
   opacity: 0;
   visibility: hidden;
-  transition: opacity .35s, visibility .35s, height .35s;
+  transition: opacity 0.35s, visibility 0.35s, height 0.35s;
   overflow: hidden;
-  
+
   &.open {
-    opacity: .9;
+    opacity: 0.9;
     visibility: visible;
     height: 100%;
-    
+
     li {
-      animation: fadeInRight .5s ease forwards;
-      animation-delay: .35s;
-      
+      animation: fadeInRight 0.5s ease forwards;
+      animation-delay: 0.35s;
+
       &:nth-of-type(2) {
-        animation-delay: .4s;
+        animation-delay: 0.4s;
       }
       &:nth-of-type(3) {
-        animation-delay: .45s;
+        animation-delay: 0.45s;
       }
       &:nth-of-type(4) {
-        animation-delay: .50s;
+        animation-delay: 0.5s;
       }
     }
   }
 
-/* 풀스크린 메뉴 - 메뉴 */
+  /* 풀스크린 메뉴 - 메뉴 */
   div {
-  .sideMenu{
-    position: relative;
-    height: 70%;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 50px;
-    font-family: 'Pretendard', sans-serif;
-    font-weight: 400;
-    text-align: center;
-    
-
-  }
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    display: inline-block;
-    position: relative;
-    font-size: 4em;
-    height: 100%; 
-    margin: 12% 45%;
-    padding: 0 10px;
-    
-    li {
-      display: block;
-      height: 25%;
-      height: calc(100% / 4);
-      min-height: 50px;
+    .sideMenu {
       position: relative;
-      opacity: 0;
-      padding: 5px;
-      
-      a {
+      height: 70%;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 50px;
+      font-family: "Pretendard", sans-serif;
+      font-weight: 400;
+      text-align: center;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      display: inline-block;
+      position: relative;
+      left: 0%;
+      font-size: 4em;
+      height: 100%;
+      margin: 12% 40%;
+      padding: 0 10px;
+
+      li {
         display: block;
+        height: 25%;
+        height: calc(100% / 4);
+        min-height: 50px;
         position: relative;
-        color:#dbf40c;
-        text-decoration: none;
-        overflow: hidden;
-        
-        &:hover:after,
-         &:focus:after,
-         &:active:after {
-           width: 100%;
-         }
-        
-        &:after {
-          content: '';
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          width: 0%;
-          transform: translateX(-50%);
-          height: 3px;
-          background:#fff;
-          transition: .35s;
+        opacity: 0;
+        padding: 5px;
+
+        a {
+          display: block;
+          position: relative;
+          color: #dbf40c;
+          text-decoration: none;
+          overflow: hidden;
+
+          &:hover:after,
+          &:focus:after,
+          &:active:after {
+            width: 100%;
+          }
+
+          &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0%;
+            transform: translateX(-50%);
+            height: 3px;
+            background: #fff;
+            transition: 0.35s;
+          }
         }
       }
     }
   }
-}
 }
 
 /* 키프레임으로 메뉴들이 나타날때 효과를 줌 */
@@ -850,12 +864,12 @@ header .topMenu .hamBtn div {
 //프로젝트 works 시작
 
 #works {
+  margin: 379px 0;
   .article1-title {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin: 60px 419px 2px;
-
 
     .circle-small {
       width: 15px;
@@ -1382,7 +1396,7 @@ header .topMenu .hamBtn div {
         /* 스킬 왼쪽 텍스트*/
         line-height: 2em;
         display: flex;
-        gap: 50px;
+        gap: 33px;
         /*padding: 20px;*/
         padding: 20px 10px 20px 10px;
       }
@@ -1404,7 +1418,7 @@ header .topMenu .hamBtn div {
       .txtBox-right {
         line-height: 2em;
         display: flex;
-        gap: 35px;
+        gap: 24px;
         padding: 20px;
       }
 
@@ -1448,7 +1462,8 @@ header .topMenu .hamBtn div {
   #about {
     .aboutBox {
       /*margin: 200px 240px 180px 340px;*/
-      margin: 200px 240px 180px 360px;
+      /*margin: 200px 240px 95px 220px;*/
+      margin: 200px 124px 95px 372px;
       width: 1300px;
     }
     h2 {
@@ -1502,13 +1517,15 @@ header .topMenu .hamBtn div {
   }
 
   #contact {
-    margin: 180px 370px 500px 1040px;
+    /* margin: 180px 370px 500px 1040px; */
+    /* margin: 96px 128px 297px 776px; */
+    margin: 118px 141px 297px 1070px;
     // width: 430px;
     .contact {
       /* margin: 180px 370px 500px 1010px; 
       width: 23%;*/
       // margin: 180px 370px 500px 840px;
-      border-bottom: 1px solid #fff;
+      // border-bottom: 1px solid #fff;
       // width: 30%;
     }
 
@@ -1518,11 +1535,15 @@ header .topMenu .hamBtn div {
       font-weight: bold;
       border-bottom: 1px solid #fff;
       padding: 10px;
+      /*width: 65%;*/
+      width: 400px;
     }
 
     p {
       font-size: 2em;
-      padding: 28px 18px;
+      /*padding: 28px 18px;*/
+      padding: 28px 0 9px 21px;
+      width: 65%;
 
       img {
         vertical-align: middle;
@@ -1533,6 +1554,9 @@ header .topMenu .hamBtn div {
     .buttonBox {
       /*padding-bottom: 40px;*/
       padding: 5px 10px 40px 10px;
+      border-bottom: 1px solid #fff;
+      width: 400px;
+
       button {
         background-color: transparent;
         border-radius: 18px;
@@ -1554,20 +1578,19 @@ header .topMenu .hamBtn div {
   }
 }
 
-
 /*위로가기 버튼 */
 
 #uptoBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
-  bottom: 50px; /* Place the button at the bottom of the page */
+  bottom: 90px; /* Place the button at the bottom of the page */
   right: 60px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
   background-color: #dbf40c; /* Set a background color */
-  color:#000; /* Text color */
-  font-family: 'Pretendard' sans-serif;
+  color: #000; /* Text color */
+  font-family: "Pretendard" sans-serif;
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
@@ -1578,22 +1601,20 @@ header .topMenu .hamBtn div {
   background-color: #555; /* Add a dark-grey background on hover */
 }
 
-
-
 #footer {
   // padding: 300px;
   padding-top: 600px;
   h3 {
     /* margin: 1055px auto 100px; */
-    margin: 920px auto 100px;
-    // margin-bottom: 100px;
+    /*margin: 920px auto 100px;*/
+    /*margin: 848px auto 100px;*/
+    margin: 100px auto;
     text-align: center;
     font-size: 1.8em;
     font-family: "Codystar", cursive;
   }
 
   .gradient-bg {
-    
     width: 400px;
     height: 400px;
     background: #fff;
