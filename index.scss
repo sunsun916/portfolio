@@ -865,6 +865,7 @@ header .topMenu .hamBtn div {
 
 #works {
   margin: 379px 0;
+  
   .article1-title {
     display: flex;
     justify-content: flex-end;
@@ -1556,6 +1557,7 @@ header .topMenu .hamBtn div {
       padding: 5px 10px 40px 10px;
       border-bottom: 1px solid #fff;
       width: 400px;
+      
 
       button {
         background-color: transparent;
@@ -1566,7 +1568,7 @@ header .topMenu .hamBtn div {
         color: #ffffff;
         font-size: 1.1em;
         padding: 6px 25px;
-        margin: 7px;
+        margin: 2px;
         text-decoration: none;
         &:hover {
           background-color: #dbf40c;
