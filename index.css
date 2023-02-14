@@ -924,10 +924,12 @@ header .topMenu .hamBtn div {
   /* margin: 180px 370px 500px 1040px; */
   /* margin: 96px 128px 297px 776px; */
   margin: 118px 141px 297px 1070px;
-}
-#wrapper #contact .contact {
-  /* margin: 180px 370px 500px 1010px; 
-  width: 23%;*/
+  /*.contact {
+      width: 23%;
+      margin: 180px 370px 500px 840px;
+      border-bottom: 1px solid #fff;
+      width: 30%;
+  } */
 }
 #wrapper #contact h2 {
   font-size: 2.6em;
